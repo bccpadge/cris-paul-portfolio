@@ -39,7 +39,7 @@ I focused on accessibility a lot when building the website. The navigation was b
 
 ## View Website
 
-- Live Demo: [Github Pages]()
+- Live Demo: [Github Pages](https://bccpadge.github.io/cris-paul-portfolio/)
 
 ## Useful Resources
 
