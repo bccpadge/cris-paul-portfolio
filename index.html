@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cris Paul</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <!-- remix icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- a11y slider css -->
+  <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+  <!-- SCROLL REVEAL -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JavaScript -->
+  <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header" data-js-header>
+    <nav class="navbar container">
+      <a href="./index.html" class="logo">
+        <img class="logo__image" src="./assets/images/logo.svg" alt="Cris Paul logo" />
+      </a>
+      <div class="navbar__menu" id="navbar__menu" data-js-navbar>
+        <ul class="navbar__list flex">
+          <li>
+            <a href="#home" class="navbar__list-link ring--link">Home</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="navbar__list-link ring--link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#services" class="navbar__list-link ring--link">Services</a>
+          </li>
+          <li>
+            <a href="#aboutme" class="navbar__list-link ring--link">About me</a>
+          </li>
+          <li>
+            <a href="#blog" class="navbar__list-link ring--link">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__btn-group">
+        <a href="#" class="btn btn--text btn--transparent ring--link">Contact me</a>
+        <button class="mobile__toggle" data-js-mobile-toggle aria-controls="navbar__menu" aria-expanded="false">
+          <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.3333 0.999999L0.999918 1" stroke="#fff" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M17.3333 6.83333L0.999916 6.83333" stroke="#fff" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M10.3333 12.6667L0.999918 12.6667" stroke="#fff" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span class="visually-hidden">Menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="showcase" id="home" aria-labelledby="title">
+      <div class="showcase__container container">
+        <h1 class="title visually-hidden">Welcome to Cris Paul Portfolio</h1>
+        <h2 class="showcase__title title title--main" id="title">
+          Hello, I'm Cris Paul, a professional photographer
+        </h2>
+        <picture class="showcase__image">
+          <source media="(min-width: 48em)" srcset="./assets/images/showcase_image_lg.png" />
+          <img src="./assets/images/showcase_image_sm.png" alt="" />
+        </picture>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio" aria-labelledby="My works">
+      <div class="portfolio__container container">
+        <div class="portfolio__metadata section-metadata">
+          <h2 class="showcase__title title" id="My works">My works</h2>
+        </div>
+        <div>
+          <ul class="slider">
+            <li>
+              <figure>
+                <img src="https://source.unsplash.com/500x500" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://source.unsplash.com/501x501" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://source.unsplash.com/502x502" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://source.unsplash.com/503x503" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://source.unsplash.com/504x504" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://source.unsplash.com/505x505" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://source.unsplash.com/505x506" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://source.unsplash.com/507x507" alt="" />
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://source.unsplash.com/508x508" alt="" />
+              </figure>
+            </li>
+          </ul>
+        </div>
+    </section>
+    <section class="services" id="services" aria-labelledby="services">
+      <div class="services__container container">
+        <div class="services__metadata section-metadata">
+          <h2 class="title" id="services">Services that I provide</h2>
+          <p class="section__metadata-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, et!
+            Unde similique quod asperiores reprehenderit?
+          </p>
+        </div>
+        <div class="services__image-wrapper">
+          <img src="./assets/images/cris_paul.png" alt="Cris Paul holding a camera" />
+        </div>
+        <ul class="services__list">
+          <div class="services__list-divider">
+            <li class="services__list-item">
+              <i class="ri-camera-line services__list-icon"></i>
+              <h3 class="services__list-title title">Photography</h3>
+              <p class="services__list-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur, modi fugiat totam doloremque explicabo harum?
+              </p>
+            </li>
+            <li class="services__list-item">
+              <i class="ri-vidicon-2-line services__list-icon"></i>
+              <h3 class="services__list-title title">Videography</h3>
+              <p class="services__list-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur, modi fugiat totam doloremque explicabo harum?
+              </p>
+            </li>
+          </div>
+          <li class="services__list-item">
+            <i class="ri-flight-takeoff-line services__list-icon"></i>
+            <h3 class="services__list-title title">Aerial Photography</h3>
+            <p class="services__list-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur, modi fugiat totam doloremque explicabo harum?
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about" id="aboutme" aria-labelledby="about">
+      <div class="about__container container">
+        <article class="about__information">
+          <h2 class="about__information-title title" id="about">
+            About Cris Paul
+          </h2>
+          <p class="about__information-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            voluptatum numquam, facere vitae molestiae qui velit culpa eos
+            dolorum, possimus ipsam non ab maxime ipsa?
+          </p>
+          <p class="about__information-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            voluptatum numquam, facere vitae molestiae qui velit culpa eos
+            dolorum, possimus ipsam non ab maxime ipsa?
+          </p>
+          <a href="#" class="btn btn--text btn-green">Learn more</a>
+        </article>
+        <div class="about__images">
+          <img class="about__images-image about__images-image--top" src="./assets/images/about_image_top.png" alt="" />
+          <img class="about__images-image about__images-image--bottom" src="./assets/images/about_image_bottom.png"
+            alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="blog" id="blog" aria-labelledby="blog">
+      <div class="blog__container container">
+        <div class="blog__metadata section-metadata">
+          <h2 class="title" id="blog">Latest blog posts</h2>
+          <p class="blog__metadata-description section__metadata-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, et!
+            Unde similique quod asperiores reprehenderit?
+          </p>
+          <a href="#" class="btn btn--text btn--transparent">View all posts</a>
+        </div>
+        <article class="blog__post post--left">
+          <picture class="blog__post-image">
+            <source media="(min-width: 28.125em)" srcset="./assets/images/blog_post_1.png" />
+            <img src="./assets/images/blog_post_1_small.png" alt="" />
+          </picture>
+          <h3 class="blog__post-title title">Sample title</h3>
+          <a href="#" class="btn btn--text btn--transparent">Read more</a>
+        </article>
+        <article class="blog__post post--right">
+          <picture class="blog__post-image">
+            <source media="(min-width: 28.125em)" srcset="./assets/images/blog_post_2.png" />
+            <img src="./assets/images/blog_post_2_small.png" alt="" />
+          </picture>
+          <h3 class="blog__post-title title">Sample title</h3>
+          <a href="#" class="btn btn--text btn--transparent">Read more</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__group">
+        <h2 class="footer__title title title--main" id="title">
+          Looking for a professional photographer?
+        </h2>
+        <a href="mailto:someone@domain.com" class="btn btn--text btn--transparent ring--link">Contact me</a>
+      </div>
+      <span class="footer__divider"></span>
+      <div class="footer__group">
+        <a href="./index.html" class="footer__logo">
+          <img src="./assets/images/logo.svg" alt="Cris Paul logo" />
+        </a>
+        <p class="footer__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+          adipisci maiores consequuntur officiis quae accusantium totam, nemo
+          sequi quia quisquam!
+        </p>
+        <ul class="footer__list flex">
+          <li>
+            <a href="#" class="footer__list-link" aria-label="Twitter profile for Cris Paul">
+              <i class="ri-twitter-line"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__list-link" aria-label="Dribbble profile for Cris Paul">
+              <i class="ri-dribbble-line"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__list-link" aria-label="Instagram profile for Cris Paul">
+              <i class="ri-instagram-line"></i>
+            </a>
+          </li>
+        </ul>
+        <span class="footer__copyright">&copy; Cris Paul 2022. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+  <!-- a11y slider JavaScript -->
+  <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
+</body>
+
+</html>
